@@ -5,5 +5,10 @@
     "title": "Mehrsprachige Anwendung",
     "medium-btn": "Der Medium-Artikel",
     "github-btn": "Das GitHub-Repository"
+  },
+  "main": {
+    "title": "Fühlen Sie sich frei, die Route zu ändern, um die Lazy-Loading-Übersetzung zu sehen",
+    "page-one": "Seite eins",
+    "page-two": "Seite zwei"
   }
 }
