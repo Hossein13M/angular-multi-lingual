@@ -1,7 +1,4 @@
 {
-  "test": {
-    "header": "sad"
-  },
-  "header": "Page Two",
+  "header": "Page Two Lazy Loading",
   "slogan": "Woman, Life, Freedom"
 }
