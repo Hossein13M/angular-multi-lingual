@@ -1,0 +1,23 @@
+.header {
+  background: #1669c5;
+  border-radius: 45% / 0 0 45% 45%;
+  color: white;
+}
+
+.link-logo {
+  width: 25px;
+}
+
+.angular-img {
+  height: 37px;
+  margin-right: 5px;
+  @screen sm {
+    height: 63px;
+    margin-right: 8px;
+  }
+}
+
+button {
+  width: 250px;
+  margin: auto;
+}
