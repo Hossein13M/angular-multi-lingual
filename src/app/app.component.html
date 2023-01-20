@@ -3,8 +3,11 @@
     <app-header></app-header>
   </div>
 
-  <div class="flex-grow w-full mt-10">
-    <div class="flex flex-col mb-5" *transloco="let t; read: 'main'">
+  <div class="flex flex-col flex-grow w-full mt-10">
+    <div
+      class="flex flex-shrink top-0 flex-col mb-5"
+      *transloco="let t; read: 'main'"
+    >
       <h1 class="mb-5">{{ t("title") }}</h1>
       <div class="flex justify-center gap-x-4">
         <button
@@ -20,7 +23,9 @@
       </div>
     </div>
 
-    <router-outlet></router-outlet>
+    <div class="flex items-center justify-center flex-grow">
+      <router-outlet class="h-full"></router-outlet>
+    </div>
   </div>
 
   <div class="w-full pb-5 flex-shrink bottom-0" *transloco="let t">
