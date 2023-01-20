@@ -3,15 +3,37 @@
     <app-header></app-header>
   </div>
 
-  <div class="flex-grow w-full">
-    <router-outlet></router-outlet>
+  <div class="flex flex-col flex-grow w-full mt-10">
+    <div
+      class="flex flex-shrink top-0 flex-col mb-5"
+      *transloco="let t; read: 'main'"
+    >
+      <h1 class="mb-5">{{ t("title") }}</h1>
+      <div class="flex justify-center gap-x-4">
+        <button
+          class="rounded border-2 border-blue-500 bg-blue-500 hover:bg-blue-600 hover:border-blue-600 p-1"
+        >
+          <a routerLink="/page-one">{{ t("page-one") }}</a>
+        </button>
+        <button
+          class="rounded border-2 border-blue-500 bg-blue-500 hover:bg-blue-600 hover:border-blue-600 p-1"
+        >
+          <a routerLink="/page-two">{{ t("page-two") }}</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="flex justify-center pt-20 flex-grow">
+      <router-outlet class="h-full"></router-outlet>
+    </div>
   </div>
 
-  <div class="w-full pb-5 flex-shrink bottom-0">
+  <div class="w-full pb-5 flex-shrink bottom-0" *transloco="let t">
+    <hr class="mx-auto pb-5 w-1/2" />
     <h1>
-      Designed and Developed By
+      {{ t("footer-text") }}
       <a href="https://hmousavi.dev" target="_blank" class="text-red-500">
-        Hossein Mousavi
+        {{ t("footer-link") }}
       </a>
     </h1>
   </div>

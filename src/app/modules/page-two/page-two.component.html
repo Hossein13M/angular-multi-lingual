@@ -1,1 +1,5 @@
-<p>page-two works!</p>
+<div class="h-full text-xs" *transloco="let t; scope: 'pageTwo'">
+  <h1 class="text-4xl">{{ t("pageTwo.slogan") }}</h1>
+  <p class="my-2">{{ t("pageTwo.header") }}</p>
+  <span class="text-xs">{{ t("pageTwo.hint") }}</span>
+</div>

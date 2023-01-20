@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" *transloco="let t; read: 'header'">
   <div
     class="pt-5 sm:text-4xl text-xl flex sm:flex-row flex-col justify-center item-center"
   >
@@ -6,24 +6,22 @@
       class="flex justify-center flex-1 sm:order-first order-2 mt-5 sm:my-0"
     ></app-language-selector>
 
-    <div class="flex-1 sm:text-4xl text-xl flex justify-center item-center">
+    <div class="flex-2 sm:text-4xl text-xl flex justify-center item-center">
       <img
         src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png"
         alt="Angular Text Logo"
         class="angular-img"
       />
-      <h1 class="my-auto">Multi-lingual Application</h1>
+      <h1 class="my-auto">{{ t("title") }}</h1>
     </div>
 
     <div class="flex-1"></div>
   </div>
 
   <div
-    class="flex sm:flex-row flex-col item-center justify-around text-bold p-10"
+    class="flex sm:flex-row flex-col item-center justify-around text-bold sm:p-10 p-5"
   >
-    <button
-      class="rounded border-2 border-red-500 bg-red-500 hover:bg-red-600 hover:border-red-600 p-1"
-    >
+    <button>
       <a
         href="https://github.com/hossein13m/angular-multi-lingual"
         target="_blank"
@@ -34,13 +32,11 @@
           alt="GitHub Logo"
           class="mx-2 link-logo"
         />
-        <h1>Go To Github Repository</h1>
+        <h1>{{ t("github-btn") }}</h1>
       </a>
     </button>
 
-    <button
-      class="rounded border-2 border-red-500 bg-red-500 hover:bg-red-600 hover:border-red-600 p-1 sm:mt-auto mt-5"
-    >
+    <button class="sm:mt-auto mt-5">
       <a
         href="https://medium.com/@hossein13m"
         target="_blank"
@@ -51,7 +47,7 @@
           alt="Medium Logo"
           class="mx-2 link-logo"
         />
-        <h1>Read The Medium Article</h1>
+        <h1>{{ t("medium-btn") }}</h1>
       </a>
     </button>
   </div>

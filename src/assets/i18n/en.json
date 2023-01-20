@@ -1,0 +1,14 @@
+{
+  "footer-text": "Designed and Developed By",
+  "footer-link": "Hossein Mousavi",
+  "header": {
+    "title": "Multilingual Application",
+    "medium-btn": "The Medium Article",
+    "github-btn": "The GitHub Repository"
+  },
+  "main": {
+    "title": "Feel Free To Change Route to see lazy loading translation",
+    "page-one": "Page One",
+    "page-two": "Page Two"
+  }
+}
