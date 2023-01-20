@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslocoService } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-language-selector',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./language-selector.component.scss'],
 })
 export class LanguageSelectorComponent {
+  constructor(private translocoService: TranslocoService) {}
   public languagesList: Array<
     Record<'imgUrl' | 'code' | 'name' | 'shorthand', string>
   > = [
@@ -21,8 +23,17 @@ export class LanguageSelectorComponent {
       name: 'English',
       shorthand: 'ENG',
     },
+    {
+      imgUrl: '/assets/images/Persian.png',
+      code: 'fa',
+      name: 'Persian',
+      shorthand: 'PER',
+    },
   ];
   public changeLanguage(languageCode: string): void {
-    console.log(languageCode);
+    this.translocoService.setActiveLang(languageCode);
+    languageCode === 'fa'
+      ? (document.body.style.direction = 'rtl')
+      : (document.body.style.direction = 'ltr');
   }
 }

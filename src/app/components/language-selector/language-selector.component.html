@@ -1,7 +1,7 @@
 <div class="flex justify-center items-center">
   <button
     *ngFor="let language of languagesList; index as i"
-    class="flex flex-col items-center first:mr-10"
+    class="flex flex-col items-center mx-5"
     (click)="changeLanguage(language.code)"
   >
     <img [src]="language.imgUrl" [alt]="language.name" />
