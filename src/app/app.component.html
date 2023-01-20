@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<div class="flex flex-col items-center h-screen text-center">
+  <div class="top-0 flex-shrink w-full">
+    <app-header></app-header>
+  </div>
+
+  <div class="flex-grow w-full">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="w-full pb-5 flex-shrink bottom-0">
+    <h1>
+      Designed and Developed By
+      <a href="https://hmousavi.dev" target="_blank" class="text-red-500">
+        Hossein Mousavi
+      </a>
+    </h1>
+  </div>
+</div>
