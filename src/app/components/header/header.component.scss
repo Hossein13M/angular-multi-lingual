@@ -1,4 +1,5 @@
 .header {
+  direction: ltr !important;
   background: #1669c5;
   border-radius: 45% / 0 0 45% 45%;
   color: white;
@@ -6,6 +7,7 @@
 
 .link-logo {
   width: 25px;
+  filter: brightness(0) invert(1);
 }
 
 .angular-img {
@@ -18,6 +20,6 @@
 }
 
 button {
-  width: 250px;
-  margin: auto;
+  @apply flex justify-center rounded border-2 border-red-500 bg-red-500 hover:bg-red-600 hover:border-red-600 p-1 m-auto;
+  width: 220px;
 }
