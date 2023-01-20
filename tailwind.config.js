@@ -1,5 +1,10 @@
+import("tailwindcss");
+
 module.exports = {
-  content: ["./src/**/*.{html}"],
+  prefix: "",
+  important: true,
+  content: ["./src/**/*.{html,ts}"],
+  darkMode: "class",
   theme: {
     extend: {},
   },
