@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="header">
+    <app-header></app-header>
+  </div>
+
+  <div class="body w-full">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="footer">
+    <button routerLink="/page-two">Go to page Two</button>
+    <button routerLink="/page-one">Go to page One</button>
+  </div>
+</div>
