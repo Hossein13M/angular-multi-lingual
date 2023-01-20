@@ -7,11 +7,11 @@
     <router-outlet></router-outlet>
   </div>
 
-  <div class="w-full pb-5 flex-shrink bottom-0">
+  <div class="w-full pb-5 flex-shrink bottom-0" *transloco="let t">
     <h1>
-      Designed and Developed By
+      {{ t("footer-text") }}
       <a href="https://hmousavi.dev" target="_blank" class="text-red-500">
-        Hossein Mousavi
+        {{ t("footer-link") }}
       </a>
     </h1>
   </div>
