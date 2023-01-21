@@ -12,16 +12,16 @@ export class LanguageSelectorComponent {
     Record<'imgUrl' | 'code' | 'name' | 'shorthand', string>
   > = [
     {
-      imgUrl: '/assets/images/Deutsch.png',
-      code: 'de',
-      name: 'German',
-      shorthand: 'GER',
-    },
-    {
       imgUrl: '/assets/images/English.png',
       code: 'en',
       name: 'English',
       shorthand: 'ENG',
+    },
+    {
+      imgUrl: '/assets/images/Deutsch.png',
+      code: 'de',
+      name: 'German',
+      shorthand: 'GER',
     },
     {
       imgUrl: '/assets/images/Persian.png',
