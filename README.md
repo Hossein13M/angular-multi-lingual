@@ -1,6 +1,6 @@
 # AngularMultiLingual Application
 
-## Link To The [Medium Article](https://medium.com/@hossein13m) | Link To The [Live Demo](https://angular-multi-lingual.hmousavi.dev)
+## Link To The [Medium Article](https://medium.com/angular-in-depth/a-complete-guide-to-angular-multilingual-application-91f431f0f12c) | Link To The [Live Demo](https://angular-multi-lingual.hmousavi.dev)
 <hr/>
 
-![alt text](./src/assets/images/page-layout.png)
+![alt text](./src/assets/images/finalResult.gif)
